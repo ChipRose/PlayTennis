@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X6 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.5612mm" height="4.5719mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 30 38"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <font id="FontID0" horiz-adv-x="632" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Roboto">
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="√" horiz-adv-x="604"><path d="M270.5 166.003l8.83112 -40.5019 2.82969 0 9.3442 40.5019 194.829 544.824 98.1685 0 -268.168 -710.827 -72.6702 0 -121.164 306.493 -91.6695 0 0 76.1684 160.173 0 79.4956 -216.658z"/></glyph>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Roboto";src:url("#FontID0") format(svg)}
+    .fil0 {fill:#6CAB92}
+    .fnt0 {font-weight:normal;font-size:53.9617px;font-family:'Roboto'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g transform="matrix(1.00004 0 0 1 176.403 -101.183)">
+   <text x="-178" y="140"  class="fil0 fnt0">√</text>
+  </g>
+ </g>
+</svg>
