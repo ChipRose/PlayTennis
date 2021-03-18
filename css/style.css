@@ -636,18 +636,21 @@ body p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 0px 0px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .biography__image {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 250px;
-          flex: 0 0 250px;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,6 +658,7 @@ body p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 0 20px;
 }
 
 .biography__image img {
@@ -676,7 +680,10 @@ body p {
 }
 
 .biography__text {
-  padding: 0 20px 0 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 75%;
+          flex: 0 1 75%;
+  padding: 0 20px;
 }
 
 /*-------------------------------=ЗАПИШИТЕСЬ=------------------------------*/
