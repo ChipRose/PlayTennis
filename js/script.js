@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	/* СЛАЙДЕРЫ */
 	$('.slider').slick({
 		arrows: true,
 		dots: true, //Показывает булиты
@@ -14,7 +15,8 @@ $(document).ready(function () {
 				breakpoint: 998,
 				settings: {
 					slidesToShow: 2,
-					slidesToScroll: 3,
+					slidesToScroll: 2,
+					dots: false,
 				}
 			},
 			{
@@ -22,6 +24,7 @@ $(document).ready(function () {
 				settings: {
 					slidesToShow: 1,
 					slidesToScroll: 1,
+					dots: false,
 				}
 			}
 		],
@@ -31,15 +34,15 @@ $(document).ready(function () {
 		dots: true,
 		//fade: true,
 		//autoplay: true,
-		//autoplaySpeed: 4000,
+		infinite:true,
+		autoplaySpeed: 5000,
 		appendDots: $('.button__cover'),
 	});
-	$('.block2__column').slick({
-		arrows: true,
-		dots: false,
-		//fade: true,
-		//autoplay: true,
-		//autoplaySpeed: 4000,
-		//appendDots: $('.block2__column '),
+	$('.trainingtype__title').click(function(event){
+		if($('.spoiler').hasClass('one')){
+			$('.trainingtype__title').not($(this)).removeClass('active');
+			$('.trainingtype__text').not($(this).next()).slideUp(300);
+		}
+		$(this).toggleClass('active').next().slideToggle(300);
 	});
 });
