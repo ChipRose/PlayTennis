@@ -649,8 +649,8 @@ body p {
 
 .biography__image {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 30%;
-          flex: 0 1 30%;
+      -ms-flex: 0 0 250px;
+          flex: 0 0 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -681,8 +681,8 @@ body p {
 
 .biography__text {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 70%;
-          flex: 1 1 70%;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
   padding: 0 20px;
 }
 
