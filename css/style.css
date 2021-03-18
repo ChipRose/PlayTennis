@@ -548,7 +548,7 @@ body p {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  padding: 20px;
+  padding: 0 20px 20px 20px;
 }
 
 /*---------------------=ВЫБЕРИТЕ ТРЕНИРОВКУ ДЛЯ СЕБЯ=----------------------*/
@@ -556,9 +556,6 @@ body p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-          column-gap: 20px;
-  row-gap: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: center;
@@ -573,6 +570,7 @@ body p {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
+  margin: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -638,7 +636,12 @@ body p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 20px 0px 20px;
+  padding: 0 0 0px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .biography__image {
@@ -673,7 +676,7 @@ body p {
 }
 
 .biography__text {
-  padding: 0 0 0 20px;
+  padding: 0 20px 0 20px;
 }
 
 /*-------------------------------=ЗАПИШИТЕСЬ=------------------------------*/
@@ -707,7 +710,7 @@ body p {
       -ms-flex: 0 0 70px;
           flex: 0 0 70px;
   height: 70px;
-  margin: 20px 0;
+  margin: 0 0 20px 0;
 }
 
 .contacts__phone {
