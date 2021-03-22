@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body:after {
-  content: url(../../img/icon/close.png) url(../../img/icon//loading.gif) url(../../img/icon//prev.png) url(../../img/icon/next.png);
+  content: url("../img/icon/close.png") url("../img/icon//loading.gif") url("../img/icon//prev.png") url("../img/icon/next.png");
   display: none;
 }
 
@@ -157,7 +157,7 @@ body.lb-disable-scrolling {
   width: 32px;
   height: 32px;
   margin: 0 auto;
-  background: url(../../img/icon/loading.gif) no-repeat;
+  background: url("../img/icon/loading.gif") no-repeat;
 }
 
 .lb-nav {
@@ -173,7 +173,7 @@ body.lb-disable-scrolling {
 
 .lb-nav a {
   outline: 0;
-  background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==);
+  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==");
 }
 
 .lb-next,
@@ -187,7 +187,7 @@ body.lb-disable-scrolling {
   width: 34%;
   left: 0;
   float: left;
-  background: url(../../img/icon/prev.png) left 48% no-repeat;
+  background: url("../img/icon/prev.png") left 48% no-repeat;
   filter: alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -203,7 +203,7 @@ body.lb-disable-scrolling {
   width: 64%;
   right: 0;
   float: right;
-  background: url(../../img/icon/next.png) right 48% no-repeat;
+  background: url("../img/icon/next.png") right 48% no-repeat;
   filter: alpha(Opacity=0);
   opacity: 0;
   -webkit-transition: opacity 0.6s;
@@ -262,7 +262,7 @@ body.lb-disable-scrolling {
   float: right;
   width: 30px;
   height: 30px;
-  background: url(../../img/icon/close.png) top right no-repeat;
+  background: url("../img/icon/close.png") top right no-repeat;
   text-align: right;
   outline: 0;
   filter: alpha(Opacity=70);
@@ -304,6 +304,11 @@ body p {
   margin-bottom: 8px;
 }
 
+body .text {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .greencolor {
   color: #6cab92;
 }
@@ -322,6 +327,10 @@ body p {
 
 .center {
   text-align: center;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .vertcenterh1h2 {
@@ -832,6 +841,115 @@ body p {
   height: 10px;
   border: 1px solid #59947d;
   border-radius: 50%;
+}
+
+/*---------------------------=ТЕННИС В ТАГАНРОГЕ=--------------------------*/
+label {
+  cursor: pointer;
+}
+
+.custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.custom-checkbox + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.custom-checkbox + label:before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  border: 1px solid #adb5bd;
+  border-radius: 3px;
+  margin: 0 5px 0 0;
+}
+
+.custom-checkbox:checked + label:before {
+  border-color: #6cab92;
+  background: url("../img/icon/checkbox.svg") center/80% no-repeat, #6cab92;
+}
+
+.map {
+  background: #e3efe0;
+}
+
+.map__button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px dashed #6cab92;
+  padding: 10px;
+  margin: 0 20px;
+  border-radius: 7px;
+  margin: 10px;
+}
+
+.map__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 20px;
+}
+
+.map__title {
+  margin: 10px 0;
+}
+
+.map__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 600px;
+          flex: 0 1 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px 0 0;
+}
+
+.map__descript {
+  padding: 20px;
+}
+
+.map__descript li {
+  background: url("../img/icon/list.svg") 0 8px/10px no-repeat;
+  padding: 0 0 0 15px;
+  margin: 0 0 0 10px;
+}
+
+.map__map {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 600px;
+          flex: 0 1 600px;
+  min-height: 450px;
+  border: 1px dashed #6cab92;
+  border-radius: 7px;
 }
 
 /*---------------------------------=ФУТЕР=---------------------------------*/
