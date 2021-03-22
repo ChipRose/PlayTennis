@@ -14,6 +14,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 998,
 				settings: {
+					arrows: true,
 					slidesToShow: 2,
 					slidesToScroll: 2,
 					dots: false,
@@ -22,6 +23,7 @@ $(document).ready(function () {
 			{
 				breakpoint: 693,
 				settings: {
+					arrows: true,
 					slidesToShow: 1,
 					slidesToScroll: 1,
 					dots: false,
@@ -34,15 +36,41 @@ $(document).ready(function () {
 		dots: true,
 		//fade: true,
 		//autoplay: true,
-		infinite:true,
+		infinite: true,
 		autoplaySpeed: 5000,
 		appendDots: $('.button__cover'),
 	});
-	$('.trainingtype__title').click(function(event){
-		if($('.spoiler').hasClass('one')){
+	$('.trainingtype__title').click(function (event) {
+		if ($('.spoiler').hasClass('one')) {
 			$('.trainingtype__title').not($(this)).removeClass('active');
 			$('.trainingtype__text').not($(this).next()).slideUp(300);
 		}
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 });
+
+// при загрузке
+let id = $("#nav-radio input:checked").val();
+$('.block-map > div').hide();
+$('.block-map > #'+id+'').show();
+
+//при изменении
+$("#nav-radio").on("change", "input[type=radio]", function(){
+  
+  let id = $(this).val();
+  $('.block-map > div').hide();
+  $('.block-map > #'+id+'').show();
+  
+});
+  
+
+
+
+
+
+// $('map__radio').on('change','input[type=radio]',function(){
+// 	let id=$(this).value;
+// 	console.log('id');
+// 	$('.map__image>iframe').hide();
+// 	$('.map__image>#'+id+'').show();
+// }); 
