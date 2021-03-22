@@ -621,8 +621,8 @@ body .text {
   left: 50%;
   right: 50%;
   margin: 0 0 0 -8px;
-  -webkit-transition: border-color 0.5s ease, all 0.5s ease;
-  transition: border-color 0.5s ease, all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .trainingtype__title.active::after {
@@ -895,9 +895,8 @@ label {
   display: inline-flex;
   border: 1px dashed #6cab92;
   padding: 10px;
-  margin: 0 20px;
   border-radius: 7px;
-  margin: 10px;
+  margin: 20px 10px 10px 10px;
 }
 
 .map__row {
