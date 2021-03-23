@@ -48,8 +48,8 @@ $(document).ready(function () {
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
 });
-
-// при загрузке
+//Выбор карты
+//при загрузке
 let id = $("#nav-radio input:checked").val();
 $('.block-map > div').hide();
 $('.block-map > #'+id+'').show();
@@ -59,18 +59,15 @@ $("#nav-radio").on("change", "input[type=radio]", function(){
   
   let id = $(this).val();
   $('.block-map > div').hide();
-  $('.block-map > #'+id+'').show();
-  
+  $('.block-map > #'+id+'').show(); 
 });
   
 
+//Бургер
+$('.header__burger').click(function(event){
+	$('.header__burger, .header__menu').toggleClass('active');
+	$('body').toggleClass('lock');
+});
 
 
 
-
-// $('map__radio').on('change','input[type=radio]',function(){
-// 	let id=$(this).value;
-// 	console.log('id');
-// 	$('.map__image>iframe').hide();
-// 	$('.map__image>#'+id+'').show();
-// }); 
