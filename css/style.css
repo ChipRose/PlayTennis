@@ -354,22 +354,6 @@ body .text {
           box-shadow: #b2b3b3 1px 1px 2px;
 }
 
-.button__up {
-  position: fixed;
-  z-index: 200;
-  right: 0px;
-  bottom: 0px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: url("../img/icon/arrow_Up.svg") 50%/60% no-repeat, #f1a511;
-}
-
-.button__up a {
-  display: block;
-  height: 100%;
-}
-
 .inst {
   background: url("../img/icon/inst.svg") center/90% no-repeat;
 }
@@ -407,6 +391,16 @@ body .text {
 
 .wa:hover {
   background: url("../img/icon/wa-hover.svg") center/86% no-repeat;
+}
+
+.button__up {
+  position: fixed;
+  background: url("../img/icon/arrow_Up.svg") center/50% no-repeat, #f1a511;
+  width: 50px;
+  height: 50px;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
 }
 
 /*----------------------------------Основной стиль----------------------------------*/
@@ -484,7 +478,7 @@ body .text {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 21;
+  z-index: 2;
 }
 
 .header__body {
@@ -501,6 +495,7 @@ body .text {
           align-items: center;
   background: #6cab92;
   padding: 0 10px 0 10px;
+  z-index: 3;
 }
 
 .header__logo {
@@ -508,7 +503,7 @@ body .text {
       -ms-flex: 0 0 50px;
           flex: 0 0 50px;
   position: relative;
-  z-index: 22;
+  z-index: 4;
 }
 
 .header__logo img {
@@ -540,7 +535,7 @@ body .text {
 .header__list li:not(:first-child):before {
   content: '';
   position: absolute;
-  width: 2px;
+  width: 3px;
   height: 80%;
   background: #8fbc8f;
 }
@@ -559,7 +554,7 @@ body .text {
 
 @media (max-width: 844px) {
   .content {
-    padding: 50px 0 0 0;
+    padding: 100px 0 0 0;
   }
   body.lock {
     overflow: hidden;
@@ -578,7 +573,7 @@ body .text {
     width: 30px;
     height: 20px;
     position: relative;
-    z-index: 22;
+    z-index: 25;
   }
   .header__burger:before, .header__burger:after {
     content: '';
@@ -628,13 +623,14 @@ body .text {
     width: 100%;
     height: 100%;
     background: #d6e9d8;
-    padding: 70px 10px 0 10px;
+    padding: 30px 10px 0 10px;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
     overflow: auto;
+    z-index: 1;
   }
   .header__menu.active {
-    top: 0;
+    top: 50px;
   }
   .header__list {
     display: block;
