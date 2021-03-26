@@ -67,6 +67,11 @@ $("#nav-radio").on("change", "input[type=radio]", function(){
 $('.header__burger').click(function(event){
 	$('.header__burger, .header__menu').toggleClass('active');
 	$('body').toggleClass('lock');
+	let menu=document.querySelector('.header__list');
+	menu.onclick=function(){
+		$('.header__burger, .header__menu').toggleClass('active');
+	};
+
 });
 
 
