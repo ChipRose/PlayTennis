@@ -431,20 +431,6 @@ body .text {
 }
 
 /*------------------------------=ПЕРВЫЙ СЛАЙД=------------------------------*/
-.cover {
-  position: relative;
-}
-
-.cover__item {
-  text-align: center;
-}
-
-.cover__item img {
-  display: block;
-  position: relative;
-  width: 100%;
-}
-
 .slider__cover {
   min-width: 0;
   position: relative;
@@ -463,6 +449,15 @@ body .text {
   overflow: hidden;
 }
 
+.cover {
+  position: relative;
+}
+
+.button__cover {
+  position: absolute;
+  bottom: 0;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -472,7 +467,7 @@ body .text {
 }
 
 .header:before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -532,16 +527,21 @@ body .text {
   background: #59947d;
 }
 
-.header__list li:not(:first-child):before {
-  content: '';
+.header__list li:not(:first-child):before, .header__list li:not(:last-child):after {
+  content: "";
   position: absolute;
-  width: 3px;
+  width: 1px;
   height: 80%;
   background: #8fbc8f;
 }
 
 .header__list li:before {
   left: 0;
+  top: 10%;
+}
+
+.header__list li:after {
+  right: 0px;
   top: 10%;
 }
 
@@ -554,7 +554,7 @@ body .text {
 
 @media (max-width: 844px) {
   .content {
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
   }
   body.lock {
     overflow: hidden;
@@ -576,7 +576,7 @@ body .text {
     z-index: 25;
   }
   .header__burger:before, .header__burger:after {
-    content: '';
+    content: "";
     background-color: #fff;
     position: absolute;
     width: 100%;
@@ -640,6 +640,7 @@ body .text {
     margin: 0 0 20px 0;
   }
   .header__list li a {
+    display: block;
     color: #383a40;
   }
   .header__list li:not(:first-child):before {
@@ -711,7 +712,7 @@ body .text {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  padding: 0 20px 20px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 /*---------------------=ВЫБЕРИТЕ ТРЕНИРОВКУ ДЛЯ СЕБЯ=----------------------*/
@@ -733,7 +734,7 @@ body .text {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 200px;
           flex: 0 1 200px;
-  margin: 10px;
+  margin: 10px 10px 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -821,7 +822,7 @@ body .text {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .biography__image img {
@@ -846,12 +847,16 @@ body .text {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 600px;
           flex: 1 1 600px;
-  padding: 0 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 /*-------------------------------=ЗАПИШИТЕСЬ=------------------------------*/
 .contacts {
   background: #e3efe0;
+}
+
+.contacts__text {
+  padding: 10px 20px 10px 20px;
 }
 
 .contacts__col {
@@ -871,8 +876,6 @@ body .text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
 }
 
 .contacts__button {
@@ -880,11 +883,7 @@ body .text {
       -ms-flex: 0 0 70px;
           flex: 0 0 70px;
   height: 70px;
-  margin: 0 0 20px 0;
-}
-
-.contacts__phone {
-  margin: 0 0 20px 0;
+  margin: 10px 10px 10px 10px;
 }
 
 .contacts__phone a {
@@ -901,7 +900,7 @@ body .text {
   min-width: 0;
   position: relative;
   padding: 0 50px;
-  margin: 0 0 10px 0;
+  margin: 10px 0 10px 0;
 }
 
 .slider .slick-track {
@@ -1022,7 +1021,7 @@ label {
 }
 
 .custom-checkbox + label:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -1053,6 +1052,10 @@ label {
   margin: 20px 10px 10px 10px;
 }
 
+.map__intr {
+  padding: 0 20px 0px 20px;
+}
+
 .map__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1065,7 +1068,6 @@ label {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px;
 }
 
 .map__title {
@@ -1074,8 +1076,8 @@ label {
 
 .map__text {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 600px;
-          flex: 0 1 600px;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1083,17 +1085,15 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 0 20px 0 0;
 }
 
 .map__descript {
-  padding: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .map__descript li {
-  background: url("../img/icon/list.svg") 0 8px/10px no-repeat;
+  background: url("../img/icon/list.svg") 0 10px/8px no-repeat;
   padding: 0 0 0 15px;
-  margin: 0 0 0 10px;
 }
 
 .map__map {
@@ -1101,6 +1101,8 @@ label {
       -ms-flex: 0 1 600px;
           flex: 0 1 600px;
   min-height: 450px;
+  margin: 10px 0 10px 0;
+  height: 100%;
   border: 1px dashed #6cab92;
   border-radius: 7px;
 }
