@@ -648,7 +648,7 @@ body .text {
     display: block;
     color: #383a40;
   }
-  .header__list li:not(:first-child):before {
+  .header__list li:before, .header__list li:after {
     display: none;
   }
   .header__list li:hover {
