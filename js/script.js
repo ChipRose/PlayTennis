@@ -47,6 +47,12 @@ $(document).ready(function () {
 		}
 		$(this).toggleClass('active').next().slideToggle(300);
 	});
+// плавное перемещение страницы к нужному блоку
+	$("nav li a").click(function () {
+		elementClick = $(this).attr("href");
+		destination = $(elementClick).offset().top-50;
+		$("body,html").animate({scrollTop: destination }, 600);
+	});
 });
 //Выбор карты
 //при загрузке
