@@ -1105,9 +1105,13 @@ label {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 600px;
           flex: 0 1 600px;
-  min-height: 450px;
-  margin: 10px 0 10px 0;
+  padding: 10px 20px 10px 20px;
+}
+
+.map__map iframe {
+  min-height: 600px;
   height: 100%;
+  width: 100%;
   border: 1px dashed #6cab92;
   border-radius: 7px;
 }
