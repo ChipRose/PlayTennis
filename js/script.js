@@ -1,5 +1,5 @@
 $(document).ready(function () {
-	/* СЛАЙДЕРЫ */
+//===================СЛАЙДЕРЫ===================
 	$('.slider').slick({
 		arrows: true,
 		dots: true, //Показывает булиты
@@ -40,6 +40,7 @@ $(document).ready(function () {
 		autoplaySpeed: 5000,
 		appendDots: $('.button__cover'),
 	});
+//===================СПОЙЛЕРЫ===================
 	$('.trainingtype__title').click(function (event) {
 		if ($('.spoiler').hasClass('one')) {
 			$('.trainingtype__title').not($(this)).removeClass('active');
@@ -54,7 +55,7 @@ $(document).ready(function () {
 		$("body,html").animate({scrollTop: destination }, 600);
 	});
 });
-//Выбор карты
+//===============ВЫБОР КАРТЫ=====================
 //при загрузке
 let id = $("#nav-radio input:checked").val();
 $('.block-map > div').hide();
@@ -67,15 +68,15 @@ $("#nav-radio").on("change", "input[type=radio]", function(){
   $('.block-map > div').hide();
   $('.block-map > #'+id+'').show(); 
 });
-  
 
-//Бургер
+//==============БУРГЕР МЕНЮ====================
 $('.header__burger').click(function(event){
 	$('.header__burger, .header__menu').toggleClass('active');
 	$('body').toggleClass('lock');
 	let menu=document.querySelector('.header__list');
 	menu.onclick=function(){
 		$('.header__burger, .header__menu').toggleClass('active');
+		$('body').removeClass('lock');
 	};
 
 });
